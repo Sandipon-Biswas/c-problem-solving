@@ -43,8 +43,8 @@ public class Main {
         
         ShoppingCart cart = new ShoppingCart();
         
-        DiscountedItem book = new DiscountedItem("Frictional Book",500,1.5,true,30.0);
-        Item withoutDiscount = new Item("Shoes",1000,1,false);
+        DiscountedItem book = new DiscountedItem("Food",500,1.5,true,30.0);
+        Item withoutDiscount = new Item("Seven up",1000,1,false);
         
         cart.addItem(book);
         cart.addItem(withoutDiscount);
