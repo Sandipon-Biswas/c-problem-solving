@@ -50,13 +50,13 @@ public class Main {
         cart.addItem(withoutDiscount);
         
         System.out.println(cart);
-        System.out.println("total Price:"+cart.calculate_total_price());
+        System.out.println("In totla price   "+cart.calculate_total_price());
         
         OnlineShoppingCart addShippingCarge = new OnlineShoppingCart(100.0f);
         cart.addItem(book);
         cart.addItem(withoutDiscount);
 
-        System.out.println("total shipping charge add:"+addShippingCarge.calculate_total_price());
+        System.out.println("Totoal price with shipping charge  "+addShippingCarge.calculate_total_price());
  
    
        
