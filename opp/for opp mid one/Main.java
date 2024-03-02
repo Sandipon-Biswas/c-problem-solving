@@ -11,6 +11,6 @@ public class Main{
         son1.add();
         OverLoading over=new OverLoading();
         over.load(3, 7);
-        over.load(3, 7,43);
+        over.load(3, 7);
     }
 }
