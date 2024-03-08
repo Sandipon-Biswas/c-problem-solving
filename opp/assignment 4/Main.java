@@ -43,20 +43,20 @@ public class Main {
         
         ShoppingCart cart = new ShoppingCart();
         
-        DiscountedItem book = new DiscountedItem("Frictional Book",500,1.5,true,10.0);
-        Item withoutDiscount = new Item("Shoes",100,1,false);
+        DiscountedItem book = new DiscountedItem("Food",500,1.5,true,30.0);
+        Item withoutDiscount = new Item("Seven up",1000,1,false);
         
         cart.addItem(book);
         cart.addItem(withoutDiscount);
         
         System.out.println(cart);
-        System.out.println("total Price:"+cart.calculate_total_price());
+        System.out.println("In totla price   "+cart.calculate_total_price());
         
-        OnlineShoppingCart addShippingCarge = new OnlineShoppingCart(60.0f);
+        OnlineShoppingCart addShippingCarge = new OnlineShoppingCart(100.0f);
         cart.addItem(book);
         cart.addItem(withoutDiscount);
 
-        System.out.println("total shipping charge add:"+addShippingCarge.calculate_total_price());
+        System.out.println("Totoal price with shipping charge  "+addShippingCarge.calculate_total_price());
  
    
        

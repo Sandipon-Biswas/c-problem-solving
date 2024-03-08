@@ -16,14 +16,7 @@ class ShoppingCart {
             System.out.println("cannot add more items. cart is full.");
         }
     }
-    // public void removeItem(Item item, double product) {
-    //     if (item.getName()==product.Name()) {
-    //         item[itemCount] = item;
-            
-    //     } else {
-    //         System.out.println("cannot add more items. cart is full.");
-    //     }
-    // }
+ }
 
     public double calculate_total_price() {
         double totalPrice = 0;
