@@ -7,7 +7,7 @@ int main() {
     while (t--) {
         int x;
         cin >> x;
-        if ((x - 1) % 3 == 0 || (x + 1) % 3 == 0) 
+        if ((x - 1) % 3 == 0 || (x + 1) % 3 == 0) {
             cout << "First" << endl;
         } else {
             cout << "Second" << endl;
