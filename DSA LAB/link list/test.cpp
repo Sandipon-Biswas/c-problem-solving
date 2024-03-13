@@ -31,6 +31,12 @@ void addfirst(node* &head, int val){
     head=n;
     
     }
+    void deletehead(node* &head){
+        node* todelete=head;
+        head=head->next;
+        delete todelete;
+
+    }
     void deleteation(node* &head,int val){
         node* temp=head;
         while(temp->next->data!=val){
