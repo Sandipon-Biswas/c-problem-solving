@@ -1,50 +1,49 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-// 
-#define sandipon 1
+// #define sandipon 1
 
-//S pee d
+// Speed
 #define Code ios_base::sync_with_stdio(false);
 #define By cin.tie(NULL);
 #define Sandipon cout.tie(NULL);
 
-//Aliases
-using ll= long long;
-using lld= long double;
-using ull= unsigned long long;
+// Aliases
+using ll = long long;
+using lld = long double;
+using ull = unsigned long long;
 
-//Constants
-const lld pi= 3.141592653589793238;
-const ll INF= LONG_LONG_MAX;
-const ll mod=1e9+7;
+// Constants
+const lld pi = 3.141592653589793238;
+const ll INF = LONG_LONG_MAX;
+const ll mod = 1e9 + 7;
 
-//TypeDEf
+// TypeDEf
 typedef pair<ll, ll> pll;
 typedef vector<ll> vll;
 typedef vector<pll> vpll;
 typedef vector<string> vs;
-typedef unordered_map<ll,ll> umll;
-typedef map<ll,ll> mll;
+typedef unordered_map<ll, ll> umll;
+typedef map<ll, ll> mll;
 
 // Macros
 #define ff first
 #define ss second
 #define pb push_back
 #define mp make_pair
-#define fl(i,n) for(int i=0;i<n;i++)
-#define rl(i,m,n) for(int i=n;i>=m;i--)
-#define py cout<<"YES\n";
-#define pm cout<<"-1\n";
-#define pn cout<<"NO\n";
-#define vr(v) v.begin(),v.end()
-#define rv(v) v.end(),v.begin()
+#define fl(i, n) for(int i = 0; i < n; i++)
+#define rl(i, m, n) for(int i = n; i >= m; i--)
+#define py cout << "YES\n";
+#define pm cout << "-1\n";
+#define pn cout << "NO\n";
+#define vr(v) v.begin(), v.end()
+#define rv(v) v.end(), v.begin()
 
-//Debug
+// Debug
 #ifdef sandipon
-#define dd(x) cerr << #x<<" "; cerr<<x<<" "; cerr << endl;
+#define dd(x) cerr << #x << " "; cerr << x << " "; cerr << endl;
 #else
-#define debug(x);
+#define dd(x);
 #endif
 
 // Operator overloads
@@ -72,48 +71,56 @@ ll lcm(ll a, ll b){return (a/gcd(a,b)*b);}
 ll moduloMultiplication(ll a,ll b,ll mod){ll res = 0;a %= mod;while (b){if (b & 1)res = (res + a) % mod;b >>= 1;}return res;}
 ll powermod(ll x, ll y, ll p){ll res = 1;x = x % p;if (x == 0) return 0;while (y > 0){if (y & 1)res = (res*x) % p;y = y>>1;x = (x*x) % p;}return res;}
 
-//Graph-dfs
-// bool gone[MN];
-// vector<int> adj[MN];
-// void dfs(int loc){
-//     gone[loc]=true;
-//     for(auto x:adj[loc])if(!gone[x])dfs(x);
-// }
+// Sorting
+bool sortb(const pair<int, int> &a,const pair<int, int> &b){return (a.second < b.second);}
+bool sorta(const pair<int, int> &a,const pair<int, int> &b){return (a.second > b.second);}
 
-//Sorting
-bool sorta(const pair<int,int> &a,const pair<int,int> &b){return (a.second < b.second);}
-bool sortd(const pair<int,int> &a,const pair<int,int> &b){return (a.second > b.second);}
-
-//Bits
+// Bits
 string decToBinary(int n){string s="";int i = 0;while (n > 0) {s =to_string(n % 2)+s;n = n / 2;i++;}return s;}
 ll binaryToDecimal(string n){string num = n;ll dec_value = 0;int base = 1;int len = num.length();for(int i = len - 1; i >= 0; i--){if (num[i] == '1')dec_value += base;base = base * 2;}return dec_value;}
 
-//Check
+// Check
 bool isPrime(ll n){if(n<=1)return false;if(n<=3)return true;if(n%2==0||n%3==0)return false;for(int i=5;i*i<=n;i=i+6)if(n%i==0||n%(i+2)==0)return false;return true;}
 bool isPowerOfTwo(int n){if(n==0)return false;return (ceil(log2(n)) == floor(log2(n)));}
 bool isPerfectSquare(ll x){if (x >= 0) {ll sr = sqrt(x);return (sr * sr == x);}return false;}
-
-//Code by sandipon
-//Language C++
-//Practice->Success
-
-//Code
+// Code by sandipon
+// Language C++
+// Practice->Success
+// Code
 void solve()
 {
-    ll n;
-    cin>>n;
+    // start
+    ll n,m;
+    cin>>n>>m;
+    vector<ll>v(n);
+    cin>>v;
+    ll c=0;
+    for(int i=0;i<n-1;i++){
+        c+=(v[i]+10);
+    }
+    c+=v[n-1];
+    dd(c);
+    if(c>m){
+        pm;
+    }else{
+        ll comidi=(n-1)*2+(m-c)/5;
+       
+   
+        cout<<comidi<<"\n";
+    }
+    // end
 }
-//Main
+// Main
 int main()
 {
-Code By Sandipon
-//  int n;
-//  cin>>n;
-//  vll v(n);
-//  cin>>v;
-//  cout<<v; 
-//  cout<<sumvec(v);
- 
+    Code By Sandipon
+    // int n;
+    // cin>>n;
+    // vll v(n);
+    // cin>>v;
+    // cout<<sumvec(v);
+
+
 
 
 
@@ -124,13 +131,13 @@ Code By Sandipon
     // {
     //     solve();
     // }
-    // asquare();
+     solve();
     // fl(i,t) //Kickstart
     // {
     //     cout<<"Case #"<<i+1<<": ";
-    //     asquare();
+    //    solve();
     //     cout<<"\n";
     // }
     return 0;
 }
-//End
+// End

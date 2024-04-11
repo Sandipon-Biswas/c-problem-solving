@@ -113,10 +113,17 @@ Code By Sandipon
 //  cin>>v;
 //  cout<<v; 
 //  cout<<sumvec(v);
- 
+string s;
+    std::getline(std::cin, s); // Read the entire line
 
+   set<char> r;
+    for (int i = 0; i < s.length(); ++i) {
+        if (s[i] != '{' && s[i] != ' ' && s[i] != '}' && s[i] != ',') {
+            r.insert(s[i]);
+        }
+    }
 
-
+    std::cout << r.size() << std::endl;
     
     // ll t;
     // cin>>t;

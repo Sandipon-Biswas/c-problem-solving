@@ -113,8 +113,28 @@ Code By Sandipon
 //  cin>>v;
 //  cout<<v; 
 //  cout<<sumvec(v);
- 
+ int n,p,q;
+ cin>>n;
+ cin>>p;
+ vector<int>v(p);
+ cin>>v;
+ cin>>q;
+ vector<int>v1(q);
+ cin>>v1;
+ set<int>s;
+ for(int i=0;i<p;i++){
+    s.insert(v[i]);
+ }
+  for(int i=0;i<q;i++){
+    s.insert(v1[i]);
+ }
 
+ int r=s.size();
+ if(r==n){
+    cout<<"I become the guy."<<endl;
+ }else{
+    cout<<"Oh, my keyboard!"<<endl;
+ }
 
 
     

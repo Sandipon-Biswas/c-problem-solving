@@ -113,7 +113,16 @@ Code By Sandipon
 //  cin>>v;
 //  cout<<v; 
 //  cout<<sumvec(v);
- 
+ int n,m,a,b;
+ cin>>n>>m>>a>>b;
+
+ int c1=n*a;
+ int c2= (n/m)*b + min((n%m)*a ,b);
+
+ int r=min(c1,c2);
+ cout<<r<<endl;
+
+
 
 
 

@@ -114,8 +114,21 @@ Code By Sandipon
 //  cout<<v; 
 //  cout<<sumvec(v);
  
+ll n,k;
+cin>>n>>k;
 
-
+ll e=n/2-1;
+ll o;
+if(n%2!=0){
+    o=n/2+1;
+}else{
+    o=n/2;
+}
+if(k<=o){
+    cout<<(2*k -1 )<<endl;
+}else{
+    cout<<(k-o)*2 <<endl;
+}
 
     
     // ll t;

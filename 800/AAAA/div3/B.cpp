@@ -100,8 +100,12 @@ bool isPerfectSquare(ll x){if (x >= 0) {ll sr = sqrt(x);return (sr * sr == x);}r
 //Code
 void solve()
 {
-    ll n;
-    cin>>n;
+ //start
+
+
+
+
+//end
 }
 //Main
 int main()
@@ -115,8 +119,6 @@ Code By Sandipon
 //  cout<<sumvec(v);
  
 
-
-
     
     // ll t;
     // cin>>t;
@@ -124,11 +126,11 @@ Code By Sandipon
     // {
     //     solve();
     // }
-    // asquare();
+    //solve();
     // fl(i,t) //Kickstart
     // {
     //     cout<<"Case #"<<i+1<<": ";
-    //     asquare();
+    //    solve();
     //     cout<<"\n";
     // }
     return 0;

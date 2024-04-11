@@ -113,7 +113,22 @@ Code By Sandipon
 //  cin>>v;
 //  cout<<v; 
 //  cout<<sumvec(v);
- 
+ ll n;
+ cin>>n;
+ ll l=abs(n%10);
+ ll ll=abs((n/10)%10);
+//  dd(l);
+//  dd(ll);
+ if(n>0){
+    cout<<n<<endl;
+ }else if(ll==l or l>ll ){
+     cout<<n/10<<endl;
+ }else{
+    string s=to_string(n/100);
+    s= s+to_string(l)  ;
+    ll=stoi(s);
+    cout<< (ll<0 ?ll:-ll )<<endl;
+ }
 
 
 

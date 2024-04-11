@@ -114,8 +114,33 @@ Code By Sandipon
 //  cout<<v; 
 //  cout<<sumvec(v);
  
+ll tt;
+cin>>tt;
+while (tt--)
+{
+ ll n,k;
+ cin>>n>>k;
+ vector<int>v(n);
+ cin>>v;
+ for(int i=1;i<=k;i++){
+    if(i%2!=0){
+        if (v[0]==1) {
+        v.erase(v.begin());
+        }else if(v[0]>1){
+            v[0]=v[0]-1;
+        }
+    }else{
+        int k=v.size()-1;
+        if (v[k]==1) {
+        v.pop_back();
+        }else if(v[k]>1){
+            v[k]=v[k]-1;
+        } 
+    }
+ }
 
-
+cout<<n-v.size()<<endl;
+}
 
     
     // ll t;

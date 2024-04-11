@@ -107,12 +107,20 @@ void solve()
 int main()
 {
 Code By Sandipon
-//  int n;
-//  cin>>n;
-//  vll v(n);
-//  cin>>v;
-//  cout<<v; 
-//  cout<<sumvec(v);
+
+
+int a,b,c;
+cin>>a>>b>>c;
+vector<int>v;
+int r=0;
+ 
+v.push_back(a+b+c);
+v.push_back((a+b)*c);
+v.push_back(a*(b+c));
+v.push_back(a*b*c);
+sort(v.begin(),v.end());
+cout<<v[v.size()-1];
+
  
 
 
